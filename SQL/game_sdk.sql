@@ -1,5 +1,5 @@
 CREATE DATABASE game_sdk CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-use game_oauth;
+use game_sdk;
 
 
 SET NAMES utf8mb4;
