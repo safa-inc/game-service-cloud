@@ -1,0 +1,109 @@
+version: '3.8'
+
+services:
+
+  game-service-mysql:
+    image: mysql:8.2.0-oraclelinux8
+    container_name: game-service-mysql
+    hostname: game-service-mysql
+    networks:
+      - game-service-cloud
+    restart: unless-stopped
+    ports:
+      - 3308:3306
+    volumes:
+    - ./SQL:/docker-entrypoint-initdb.d
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+
+  game-registry:
+    image: safainc/game-registry:latest
+    container_name: game-registry
+    hostname: game-registry
+    networks:
+      - game-service-cloud
+    restart: unless-stopped
+    ports:
+      - 8761:8761
+
+  game-auth-service:
+    image: safainc/game-auth-service:latest
+    container_name: game-auth-service
+    hostname: game-auth-service
+    networks:
+      - game-service-cloud
+    restart: unless-stopped
+    env_file:
+      - .env
+
+  game-gateway:
+    image: safainc/game-gateway:latest
+    container_name: game-gateway
+    hostname: game-gateway
+    networks:
+      - game-service-cloud
+    env_file:
+      - .env
+    restart: unless-stopped
+    ports:
+      - 8080:8080
+
+  game-rest:
+    image: safainc/game-rest:latest
+    container_name: game-rest
+    hostname: game-rest
+    networks:
+      - game-service-cloud
+    env_file:
+      - .env
+    restart: unless-stopped
+    extra_hosts:
+      - "game-web.info:192.168.0.166"
+
+  game-screen:
+    image: safainc/game-screen:latest
+    container_name: game-screen
+    hostname: game-screen
+    tty: true
+    networks:
+      - game-service-cloud
+    env_file:
+      - .env
+    restart: unless-stopped
+
+  game-session:
+    image: safainc/game-session:latest
+    container_name: game-session
+    hostname: game-session
+    networks:
+      - game-service-cloud
+    env_file:
+      - .env
+    restart: unless-stopped
+
+  game-websocket:
+    image: safainc/game-websocket:latest
+    container_name: game-websocket
+    hostname: game-websocket
+    networks:
+      - game-service-cloud
+    env_file:
+      - .env
+    restart: unless-stopped
+
+  game-service-customer-java:
+    image: safainc/game-service-customer-java:latest
+    container_name: game-service-customer-java
+    hostname: game-service-customer-java
+    networks:
+      - game-service-cloud
+    env_file:
+      - .env
+    restart: unless-stopped
+    ports:
+      - 8081:8081
+    
+networks:
+  game-service-cloud:
+    driver: bridge
+
