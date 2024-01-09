@@ -1,4 +1,4 @@
-CREATE DATABASE game_oauth CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE game_sdk CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 use game_oauth;
 
 
