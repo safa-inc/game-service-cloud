@@ -3,7 +3,7 @@
 
 ![img.png](doc/img.png)
 
-## introduction
+## Introduction
 
 This is a simple example of a slots game service that is deployed in a docker container and uses a docker compose file to deploy the service and its dependencies.
 
@@ -18,7 +18,7 @@ This is a simple example of a slots game service that is deployed in a docker co
 - Data persistence
 - Game service SDK
 
-### features
+### Features
 
 - Based on slots game functionality
 - Freespin game
@@ -35,7 +35,7 @@ This is a simple example of a slots game service that is deployed in a docker co
 
 ## Our team
 
-### team introduction
+### Team introduction
 
 We are the team Safa who are developers and designer in the gaming industry.
 
@@ -47,7 +47,7 @@ Our developers are the architects behind seamless code and intricate game mechan
 
 At Safa, our mission goes beyond creating captivating gaming experiences; we are committed to fostering a deep understanding of Slots games among the general public while emphasizing the importance of steering clear of gambling risks.
 
-#### Mission Statement:
+#### Mission statement:
 
 **Innovation:** We strive to lead the technological forefront, consistently introducing novel features to provide players with experiences beyond the ordinary.
 
