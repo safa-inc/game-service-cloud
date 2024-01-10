@@ -1,4 +1,4 @@
-# game-service-cloud-docker
+# game-service-cloud
 
 
 ![img.png](doc/img.png)
