@@ -61,4 +61,4 @@ As Team Safa, our mission transcends being merely developers and designers; we a
 
 ### Join us
 If you are a developer, designer, or product manager,
-Join us! If you're interested in joining our team, please leave a message here. We look forward to having you on board!
+Join us! If you're interested in joining our team, [please leave a message here](https://github.com/safa-inc/game-service-cloud-docker/issues/1)https://github.com/safa-inc/game-service-cloud-docker/issues/1. We look forward to having you on board!
