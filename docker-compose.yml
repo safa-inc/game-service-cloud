@@ -17,7 +17,7 @@ services:
       MYSQL_ROOT_PASSWORD: root
 
   game-registry:
-    image: safainc/game-registry:latest
+    image: safainc/game-registry:${IMAGE_VERSION}
     container_name: game-registry
     hostname: game-registry
     networks:
@@ -27,7 +27,7 @@ services:
       - 8761:8761
 
   game-auth-service:
-    image: safainc/game-auth-service:latest
+    image: safainc/game-auth-service:${IMAGE_VERSION}
     container_name: game-auth-service
     hostname: game-auth-service
     networks:
@@ -37,7 +37,7 @@ services:
       - .env
 
   game-gateway:
-    image: safainc/game-gateway:latest
+    image: safainc/game-gateway:${IMAGE_VERSION}
     container_name: game-gateway
     hostname: game-gateway
     networks:
@@ -49,7 +49,7 @@ services:
       - 8080:8080
 
   game-rest:
-    image: safainc/game-rest:latest
+    image: safainc/game-rest:${IMAGE_VERSION}
     container_name: game-rest
     hostname: game-rest
     networks:
@@ -61,7 +61,7 @@ services:
       - "game-web.info:192.168.0.166"
 
   game-screen:
-    image: safainc/game-screen:latest
+    image: safainc/game-screen:${IMAGE_VERSION}
     container_name: game-screen
     hostname: game-screen
     tty: true
@@ -72,7 +72,7 @@ services:
     restart: unless-stopped
 
   game-session:
-    image: safainc/game-session:latest
+    image: safainc/game-session:${IMAGE_VERSION}
     container_name: game-session
     hostname: game-session
     networks:
@@ -82,7 +82,7 @@ services:
     restart: unless-stopped
 
   game-websocket:
-    image: safainc/game-websocket:latest
+    image: safainc/game-websocket:${IMAGE_VERSION}
     container_name: game-websocket
     hostname: game-websocket
     networks:
@@ -92,7 +92,7 @@ services:
     restart: unless-stopped
 
   game-service-customer-java:
-    image: safainc/game-service-customer-java:latest
+    image: safainc/game-service-customer-java
     container_name: game-service-customer-java
     hostname: game-service-customer-java
     networks:

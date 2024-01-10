@@ -591,13 +591,6 @@ CREATE TABLE `gs_game_user_info` (
 SET FOREIGN_KEY_CHECKS = 1;
 
 -- ----------------------------
--- Records of gs_game_user_info
--- ----------------------------
-BEGIN;
-INSERT INTO `gs_game_user_info` (`id`, `username`, `s_username`, `locale`, `currency`, `status`, `create_time`) VALUES (1, 'test', 'test', 'en', 'USD', 1, NULL);
-COMMIT;
-
--- ----------------------------
 -- Table structure for gs_game_user_record_everyday
 -- ----------------------------
 DROP TABLE IF EXISTS `gs_game_user_record_everyday`;

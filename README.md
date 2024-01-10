@@ -28,9 +28,11 @@ This is a simple example of a slots game service that is deployed in a docker co
 ### The most simple way to run
 
 - docker compose pull
+- docker compose up game-service-mysql **(optional)**
 - docker compose up
 - wait for the services to start
 - open http://localhost:8081/gameSeamless/openGame?gameId=5bf661bf80797a00112ea73c
+
 
 
 ## Our team
