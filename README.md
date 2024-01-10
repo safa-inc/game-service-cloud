@@ -59,8 +59,10 @@ At Safa, our mission goes beyond creating captivating gaming experiences; we are
 
 **Responsibility:** Acknowledging the entertainment nature of games, we are committed to advocating for a rational approach to gambling. Through education and inspiration, we aim to help players better recognize the distinction between gaming and gambling, avoiding potential risks.
 
-As Team Safa, our mission transcends being merely developers and designers; we are architects of dreams, creating boundless possibilities in this fantastical world. Join us in the pursuit of our mission, guiding the future of gaming.
-
+As Team Safa, our mission transcends being merely developers and designers; we are architects of dreams, creating boundless possibilities in this fantastical world. 
 ### Join us
+
+Join us in the pursuit of our mission, guiding the future of gaming.
+
 If you are a developer, designer, or product manager,
 Join us! If you're interested in joining our team, [please leave a message here](https://github.com/safa-inc/game-service-cloud-docker/issues/1)https://github.com/safa-inc/game-service-cloud-docker/issues/1. We look forward to having you on board!
