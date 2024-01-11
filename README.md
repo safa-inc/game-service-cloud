@@ -6,6 +6,7 @@
 This is a simple example of a slots game service that is deployed in a docker container and uses a docker compose file to deploy the service and its dependencies.
 
 
+
 ### Technical
 
 - Game session handler
